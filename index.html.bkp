@@ -179,132 +179,14 @@
         <div class="column-feature-noshadow">&nbsp;</div>
       </div>
       <div class="row">&nbsp;</div>
-
       <div class="row">&nbsp;</div>
-        <div class="row">&nbsp;</div>
-        <div class="row">
+      <div class="row">&nbsp;</div>
+      <div class="row">
         <div class="column-full">
-            <center><h1 id="question-text">See it in action!</h1></center>
+          <center><a href="https://github.com/kubevirt-manager/kubevirt-manager" alt="#"><h1 id="question-text">Get started now!</h1></a></center>
         </div>
-        </div>
-        <div class="row">&nbsp;</div>
-
-      <!-- Screenshots Start -->
-      <div class="slideshow-container">
-        <div class="mySlides">
-          <img src="img/screenshots/screenshot_01.png" style="width:100%">
-        </div>
-        <div class="mySlides">
-          <img src="img/screenshots/screenshot_02.png" style="width:100%">
-        </div>
-        <div class="mySlides">
-          <img src="img/screenshots/screenshot_03.png" style="width:100%">
-        </div>
-        <div class="mySlides">
-          <img src="img/screenshots/screenshot_04.png" style="width:100%">
-        </div>
-        <div class="mySlides">
-          <img src="img/screenshots/screenshot_05.png" style="width:100%">
-        </div>
-        <div class="mySlides">
-          <img src="img/screenshots/screenshot_06.png" style="width:100%">
-        </div>
-        <div class="mySlides">
-          <img src="img/screenshots/screenshot_07.png" style="width:100%">
-        </div>
-        <div class="mySlides">
-          <img src="img/screenshots/screenshot_08.png" style="width:100%">
-        </div>
-        <div class="mySlides">
-          <img src="img/screenshots/screenshot_09.png" style="width:100%">
-        </div>
-        <div class="mySlides">
-          <img src="img/screenshots/screenshot_10.png" style="width:100%">
-        </div>
-        <div class="mySlides">
-          <img src="img/screenshots/screenshot_11.png" style="width:100%">
-        </div>
-        <div class="mySlides">
-          <img src="img/screenshots/screenshot_12.png" style="width:100%">
-        </div>
-        <div class="mySlides">
-          <img src="img/screenshots/screenshot_13.png" style="width:100%">
-        </div>
-        <div class="mySlides">
-          <img src="img/screenshots/screenshot_14.png" style="width:100%">
-        </div>
-        <div class="mySlides">
-          <img src="img/screenshots/screenshot_15.png" style="width:100%">
-        </div>
-        <div class="mySlides">
-          <img src="img/screenshots/screenshot_16.png" style="width:100%">
-        </div>
-        <div class="mySlides">
-          <img src="img/screenshots/screenshot_17.png" style="width:100%">
-        </div>
-        <div class="mySlides">
-          <img src="img/screenshots/screenshot_18.png" style="width:100%">
-        </div>
-        <div class="mySlides">
-          <img src="img/screenshots/screenshot_19.png" style="width:100%">
-        </div>
-        <div class="mySlides">
-          <img src="img/screenshots/screenshot_20.png" style="width:100%">
-        </div>
-        <div class="mySlides">
-          <img src="img/screenshots/screenshot_21.png" style="width:100%">
-        </div>
-        <div class="mySlides">
-          <img src="img/screenshots/screenshot_22.png" style="width:100%">
-        </div>
-        <div class="mySlides">
-          <img src="img/screenshots/screenshot_23.png" style="width:100%">
-        </div>
-        
-        <a class="prev" onclick="plusSlides(-1)">❮</a>
-        <a class="next" onclick="plusSlides(1)">❯</a>
-        </div>
-        
-        <script>
-        let slideIndex = 1;
-        showSlides(slideIndex);
-        
-        function plusSlides(n) {
-          showSlides(slideIndex += n);
-        }
-        
-        function currentSlide(n) {
-          showSlides(slideIndex = n);
-        }
-        
-        function showSlides(n) {
-          let i;
-          let slides = document.getElementsByClassName("mySlides");
-          let dots = document.getElementsByClassName("dot");
-          if (n > slides.length) {slideIndex = 1}    
-          if (n < 1) {slideIndex = slides.length}
-          for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";  
-          }
-          for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-          }
-          slides[slideIndex-1].style.display = "block";  
-          dots[slideIndex-1].className += " active";
-        }
-        </script>
-        <!-- Screenshots End -->
-
-        <div class="row">&nbsp;</div>
-        <div class="row">&nbsp;</div>
-        <div class="row">
-        <div class="column-full">
-            <center><a href="https://github.com/kubevirt-manager/kubevirt-manager" alt="#"><h1 id="question-text">Get started now!</h1></a></center>
-        </div>
-        </div>
-        <div class="row">&nbsp;</div>
-
-
+      </div>
+      <div class="row">&nbsp;</div>
     </div>
     <!-- Body End -->
 
