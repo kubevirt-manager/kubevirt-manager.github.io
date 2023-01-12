@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>kubevirt-manager: community</title>
+    <title>kubevirt-manager: get started</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <meta name="title" content="kubevirt-manager"/>
@@ -24,7 +24,7 @@
     <meta name="twitter:description" content="A Web User Interface for Kubevirt, that helps the creation, administration and management of Virtual Machines and Pools on top of Kubevirt."/>
 
     <!-- Cannonical URL -->
-    <link rel="canonical" href="https://kubevirt-manager.io/community.html" />
+    <link rel="canonical" href="https://kubevirt-manager.io/getting_started.html" />
     <!-- Favorite Icon -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <!-- Bootstrap core CSS -->
@@ -67,87 +67,65 @@
         <div class="row">&nbsp;</div>
         <div class="row">
           <div class="column-content">
-            <h1 id="hero-text">Community</h1>
+            <h1 id="hero-text">StorageClass</h1>
           </div>
           <div class="column-content">&nbsp;</div>
           <div class="column-content">&nbsp;</div>
         </div>
-        <div class="row">&nbsp;</div>
         <div class="row">
           <div class="column-community-noshadow">&nbsp;</div>
           <div class="column-community-header">
             <div class="community-content">
-              The kubevirt-manager system is an open source system. The project is hosted on <A HREF="https://github.com/kubevirt-manager/">Github Community</A>.
-              Contribuitions can be made directly through Pull Requests on the <A HREF="https://github.com/kubevirt-manager/kubevirt-manager/">Github Project</A>.<BR>
-              This project relies on other Open Source software. Below is a list of the used projects.
+              kubevirt-manager controls and manages disks, so a StorageClass is needed in order for the solution to work.
+              Two features needs to be enabled on the StorageClass that you plan to use:
+              <pre><code>
+    volumeBindingMode: WaitForFirstConsumer
+    allowVolumeExpansion: true
+              </code></pre>
             </div>
           </div>
         </div>
         <div class="row">&nbsp;</div>
         <div class="row">
-          <div class="column-community-noshadow">&nbsp;</div>
-          <div class="column-community">
-            <div class="community-content">
-              <A HREF="https://github.com/novnc/noVNC"><img src="/img/novnc.png" width="80" height="80" alt="kubevirt-manager NoVNC"></A>
-              &nbsp;&nbsp;&nbsp;&nbsp;<strong>NoVNC</strong> is used for console access. Details on <A HREF="https://github.com/novnc/noVNC">Github</A>.
+            <div class="column-content">
+              <h1 id="hero-text">CDI</h1>
+            </div>
+            <div class="column-content">&nbsp;</div>
+            <div class="column-content">&nbsp;</div>
+          </div>
+          <div class="row">
+            <div class="column-community-noshadow">&nbsp;</div>
+            <div class="column-community-header">
+              <div class="community-content">
+                Containerized Data Importer is used by kubevirt-manager to control DataVolume operations for
+                Virtual Machines and Virtual Machine Pools:
+                <pre><code>
+    config:
+        featureGates:
+        - HonorWaitForFirstConsumer
+                </code></pre>
+              </div>
             </div>
           </div>
-          <div class="column-community-noshadow">&nbsp;</div>
-        </div>
-        <div class="row">&nbsp;</div>
-        <div class="row">
-          <div class="column-community-noshadow">&nbsp;</div>
-          <div class="column-community">
-            <div class="community-content">
-              <A HREF="https://angular.io/"><img src="/img/angular.png" width="80" height="80" alt="kubevirt-manager AngularJS"></A>
-              &nbsp;&nbsp;&nbsp;&nbsp;<strong>Angular</strong> is used on kubevirt-manager interface. Details on <A HREF="https://angular.io/">Angular Website</A>.
+          <div class="row">&nbsp;</div>
+          <div class="row">
+            <div class="column-content">
+              <h1 id="hero-text">kubevirt-manager</h1>
+            </div>
+            <div class="column-content">&nbsp;</div>
+            <div class="column-content">&nbsp;</div>
+          </div>
+          <div class="row">
+            <div class="column-community-noshadow">&nbsp;</div>
+            <div class="column-community-header">
+              <div class="community-content">
+                To install kubevirt-manager simply apply the chart below:
+                <pre><code>
+    kubectl apply -f https://raw.githubusercontent.com/kubevirt-manager/kubevirt-manager/main/kubernetes/bundled.yaml
+                </code></pre>
+              </div>
             </div>
           </div>
-          <div class="column-community-noshadow">&nbsp;</div>
-        </div>
-        <div class="row">&nbsp;</div>
-        <div class="row">
-          <div class="column-community-noshadow">&nbsp;</div>
-          <div class="column-community">
-            <div class="community-content">
-              <A HREF="https://kubevirt.io/"><img src="/img/kubevirt.png" width="80" height="80" alt="kubevirt-manager KubeVirt"></A>
-              &nbsp;&nbsp;&nbsp;&nbsp;<strong>Kubevirt</strong> is the backend for this system. Details on <A HREF="https://kubevirt.io/">KubeVirt Website</A>.
-            </div>
-          </div>
-          <div class="column-community-noshadow">&nbsp;</div>
-        </div>
-        <div class="row">&nbsp;</div>
-        <div class="row">
-          <div class="column-community-noshadow">&nbsp;</div>
-          <div class="column-community">
-            <div class="community-content">
-              <A HREF="https://getbootstrap.com/"><img src="/img/bootstrap.png" width="80" height="70" alt="kubevirt-manager Bootstrap"></A>
-              &nbsp;&nbsp;&nbsp;&nbsp;<strong>Bootstrap</strong> is used on the system. AdminLTE is also used. Details on <A HREF="https://getbootstrap.com/">Bootstrap Website</A>.
-            </div>
-          </div>
-          <div class="column-community-noshadow">&nbsp;</div>
-        </div>
-        <div class="row">&nbsp;</div>
-        <div class="row">
-          <div class="column-community-noshadow">&nbsp;</div>
-          <div class="column-community">
-            <div class="community-content">
-              <A HREF="https://github.com/k8snetworkplumbingwg/multus-cni"><img src="/img/multus.png" width="80" height="80" alt="kubevirt-manager Multus"></A>
-              &nbsp;&nbsp;&nbsp;&nbsp;<strong>Multus CNI</strong> can be used as networking backend. Details on <A HREF="https://github.com/k8snetworkplumbingwg/multus-cni">Multus Github</A>.
-            </div>
-          </div>
-          <div class="column-community-noshadow">&nbsp;</div>
-        </div>
-        <div class="row">&nbsp;</div>
-        <div class="row">
-          <div class="column-community-noshadow">&nbsp;</div>
-          <div class="column-community">
-            <div class="community-content">
-              <A HREF="https://github.com/kubevirt/containerized-data-importer"><img src="/img/kubevirt.png" width="80" height="80" alt="kubevirt-manager CDI"></A>
-              &nbsp;&nbsp;&nbsp;&nbsp;<strong>Containerized Data Importer</strong> is used as storage backend. Details on <A HREF="https://github.com/kubevirt/containerized-data-importer">CDI Github</A>.
-            </div>
-          </div>
-        </div>
       </div>
       <!-- Body End -->
 
