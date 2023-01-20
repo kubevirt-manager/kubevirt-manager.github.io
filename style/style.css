@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
-/* Sticky footer styles
--------------------------------------------------- */
+
 html {
   position: relative;
   min-height: 100%;
@@ -27,42 +26,34 @@ body {
   height: 1px;
   width: 1px;
 }
-
-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 150px;
-  line-height: 60px; /* Vertically center the text there */
-  color: #fff;
-  background-color: #00ADB5;
-}
-
-
 /* Custom page CSS
 -------------------------------------------------- */
-/* Not required for template or sticky footer method. */
-
+/* navbar */
+.wrapper{
+  text-align: center;
+}
+.brand {
+  width: 48%;
+  height: 100%;
+  padding: 10px 0;
+}
+.nav__wrapper{
+  padding: 0;
+  margin: 0;
+}
+.nav__wrapper a{
+  font-size: 18px;
+}
+/* navbar */
 body > .container {
   padding-top: 2.5rem;
-  padding-bottom: 200px;
+  padding-bottom: 100px;
   max-width: 1140px;
   padding-left: 1rem;
   padding-right: 1rem;
   margin-left: auto;
   margin-right: auto;
 }
-
-footer > .container {
-  max-width: 1140px;
-  width: 100%;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 code {
   font-size: 80%;
 }
@@ -72,35 +63,11 @@ code {
   clear: both;
   display: table;
 }
-
-.row-footer {
-  line-height: 1.4;
-}
-
 .column-full {
   float: left;
   width: 100%;
   padding: 5px;
 }
-
-.column-footer {
-  float: left;
-  width: 55%;
-  padding: 5px;
-}
-
-.column-footer-icons {
-    float: left;
-    width: 35%;
-    padding: 5px;
-}
-
-.column-footer-content {
-    float: left;
-    width: 30%;
-    padding: 5px;
-}
-
  /* Three image containers (use 25% for four, and 50% for two, etc) */
 .column-content {
   float: left;
@@ -139,11 +106,6 @@ code {
   width: 5%;
   padding: 5px;
 }
-
-.brand {
-  font-weight: bold;
-  font-size: 20px; }
-
 .site-header {
   position: relative;
   background-color: #00ADB5; 
@@ -301,3 +263,49 @@ ul {
   @media only screen and (max-width: 300px) {
     .prev, .next,.text {font-size: 11px}
   }
+
+/* Footer custom style */
+footer{
+  color: white;
+  background-color: #00ADB5;
+  padding: 30px 30%;
+}
+footer .footer-content{
+  text-align: center;
+}
+footer .footer-content h3{
+  font-size: 30px;
+  font-weight: 900;
+}
+footer .footer-content p{
+  font-size: 17px;
+  padding: 10px 0;
+}
+footer .footer-social-links{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer-social-links i{
+  font-size: 30px;
+  margin: 0 15px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 50%;
+  transition: .5s ease all;
+}
+footer .footer-social-links i:hover{
+  color: white;
+  background-color: #00ADB5;
+}
+@media only screen and (max-width: 1000px) {
+  footer{
+    padding: 30px 20%;
+  }
+}
+@media only screen and (max-width: 460px) {
+  footer{
+    padding: 20px 10%;
+  }
+}
+/* Footer custom style */
