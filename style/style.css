@@ -12,7 +12,6 @@ html {
   box-sizing: border-box;
 }
 body {
-  /* Margin bottom by footer height */
   font-family: "Roboto", sans-serif;
   margin:0;
   padding:0;
@@ -47,7 +46,7 @@ body {
 /* navbar */
 body > .container {
   padding-top: 2.5rem;
-  padding-bottom: 100px;
+  padding-bottom: 430px;
   max-width: 1140px;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -266,11 +265,17 @@ ul {
 
 /* Footer custom style */
 footer{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+}
+footer .footer-content{
   color: white;
   background-color: #00ADB5;
   padding: 30px 30%;
-}
-footer .footer-content{
+  width: 100%;
   text-align: center;
 }
 footer .footer-content h3{
@@ -281,10 +286,14 @@ footer .footer-content p{
   font-size: 17px;
   padding: 10px 0;
 }
+footer-content-social{
+  display: flex;
+}
 footer .footer-social-links{
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+    padding: 0;
 }
 footer .footer-social-links i{
   font-size: 30px;
@@ -294,18 +303,54 @@ footer .footer-social-links i{
   border-radius: 50%;
   transition: .5s ease all;
 }
+footer .footer-copyrights{
+  text-align: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 33px;
+  background-color: #343a40;
+  padding: 15px 0 0 0;
+  margin: 0;
+  color: white;
+}
+footer .footer-copyrights p a{
+  color: #00ADB5;
+}
 footer .footer-social-links i:hover{
   color: white;
   background-color: #00ADB5;
 }
 @media only screen and (max-width: 1000px) {
-  footer{
-    padding: 30px 20%;
+  .footer-content{
+    padding: 30px 10%;
+  }
+}
+@media only screen and (max-width: 760px) {
+  footer .footer-content{
+    padding: 20px 60px;
+  }
+  footer .footer-copyrights{
+    gap: 15px;
+    font-size: 12px;
   }
 }
 @media only screen and (max-width: 460px) {
-  footer{
-    padding: 20px 10%;
+  footer .footer-content{
+    padding: 29px 13px;
+  }
+  .footer-copyrights{
+    gap: 0;
+    flex-direction: column;
+  }
+  .footer-copyrights p:first-child{
+    padding: 0;
+    margin: 0;
+  }
+  .footer-copyrights p:last-child{
+    margin: 0;
+    padding: 0 0 20px 0;
   }
 }
 /* Footer custom style */
