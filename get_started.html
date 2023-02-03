@@ -24,7 +24,7 @@
     <meta name="twitter:description" content="A Web User Interface for Kubevirt, that helps the creation, administration and management of Virtual Machines and Pools on top of Kubevirt."/>
 
     <!-- Cannonical URL -->
-    <link rel="canonical" href="https://kubevirt-manager.io/getting_started.html" />
+    <link rel="canonical" href="https://kubevirt-manager.io/get_started.html" />
     <!-- Favorite Icon -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <!-- Bootstrap core CSS -->
@@ -64,6 +64,14 @@
     <!-- Body Start -->
     <div class="container">
         <div class="row">&nbsp;</div>
+        <div class="row">&nbsp;</div>
+        <div class="row">
+            <div class="column-full">
+              <center>
+                <h2 class="hero-text" id="hero-text">For detailed instructions visit our GitHub.</h2>
+              </center>
+            </div>
+        </div>
         <div class="row">&nbsp;</div>
         <div class="row">
           <div class="column-content">
@@ -126,6 +134,50 @@
               </div>
             </div>
           </div>
+
+      <div class="row">&nbsp;</div>
+        <div class="row">
+          <div class="column-content">
+            <h1 id="hero-text">Prometheus Metrics</h1>
+          </div>
+          <div class="column-content">&nbsp;</div>
+          <div class="column-content">&nbsp;</div>
+        </div>
+        <div class="row">
+          <div class="column-community-noshadow">&nbsp;</div>
+          <div class="column-community-header">
+            <div class="community-content">
+              kubevirt-manager supports integration with Prometheus to display a few metrics in
+              the main dashboard. Note that you need Prometheus running with <b>kube-state-metrics</b> 
+              and <b>KubeVirt metrics</b> available. To integrate adjust and apply the following YAML.
+              Remember to restart your kubevirt-manager after applying it:
+              <pre><code>
+            apiVersion: v1
+            kind: ConfigMap
+            metadata:
+              name: prometheus-config
+              namespace: kubevirt-manager
+              labels:
+                app: kubevirt-manager
+                kubevirt-manager.io/version: 1.2.0
+                kubevirt-manager.io/managed: "true"
+            data:
+              prometheus.conf: |
+                location /api {
+                    proxy_set_header X-Real-IP $remote_addr;
+                    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+                    proxy_set_header X-Forwarded-Proto $scheme;
+                    proxy_pass_request_body on;
+                    proxy_pass_request_headers on;
+                    client_max_body_size 5g;
+                    proxy_set_header Upgrade $http_upgrade;
+                    proxy_set_header Connection $connection_upgrade;
+                    proxy_pass http://prometheus-service.prometheus-namespace.svc:9090;
+                }
+              </code></pre>
+            </div>
+          </div>
+        </div>
       </div>
       <!-- Body End -->
 
