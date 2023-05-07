@@ -135,7 +135,7 @@
             </div>
           </div>
 
-      <div class="row">&nbsp;</div>
+        <div class="row">&nbsp;</div>
         <div class="row">
           <div class="column-content">
             <h1 id="hero-text">Prometheus Metrics</h1>
@@ -159,7 +159,7 @@
               namespace: kubevirt-manager
               labels:
                 app: kubevirt-manager
-                kubevirt-manager.io/version: 1.2.1
+                kubevirt-manager.io/version: 1.2.2
                 kubevirt-manager.io/managed: "true"
             data:
               prometheus.conf: |
@@ -167,6 +167,7 @@
                     proxy_set_header X-Real-IP $remote_addr;
                     proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
                     proxy_set_header X-Forwarded-Proto $scheme;
+                    proxy_set_header Authorization "";
                     proxy_pass_request_body on;
                     proxy_pass_request_headers on;
                     client_max_body_size 5g;
@@ -175,6 +176,55 @@
                     proxy_pass http://prometheus-service.prometheus-namespace.svc:9090;
                 }
               </code></pre>
+            </div>
+          </div>
+
+        <div class="row">&nbsp;</div>
+        <div class="row">
+          <div class="column-content">
+            <h1 id="hero-text">Nginx Authentication</h1>
+          </div>
+          <div class="column-content">&nbsp;</div>
+          <div class="column-content">&nbsp;</div>
+        </div>
+        <div class="row">
+          <div class="column-community-noshadow">&nbsp;</div>
+          <div class="column-community-header">
+            <div class="community-content">
+              kubevirt-manager supports usage of Ngnix Basic Authentication to protect the tool.
+              To enable adjust and apply the following ConfigMap YAML.
+              <pre><code>
+            apiVersion: v1
+            kind: ConfigMap
+            metadata:
+              name: auth-config
+              namespace: kubevirt-manager
+              labels:
+                app: kubevirt-manager
+                kubevirt-manager.io/version: 1.2.2
+                kubevirt-manager.io/managed: "true"
+            data:
+              basicauth.conf: |
+                auth_basic "Restricted Content";
+                auth_basic_user_file /etc/nginx/secret.d/.htpasswd;
+                </code></pre>
+                <br>
+                You also need to provide the htpasswd file through a secret. In the example below,
+                the username/password combination is admin/admin. 
+                Remember to restart your kubevirt-manager after applying it:
+                <pre><code>
+            apiVersion: v1
+            kind: Secret
+            metadata:
+              name: auth-secret
+              namespace: kubevirt-manager
+              labels:
+                app: kubevirt-manager
+                kubevirt-manager.io/version: 1.2.2
+                kubevirt-manager.io/managed: "true"
+            data:
+              .htpasswd: YWRtaW46JGFwcjEkMk53ckdFZVkkZmtPZkZldVR4Rm5pZzBsc2NaV3c1MQo=
+                </code></pre>
             </div>
           </div>
         </div>
