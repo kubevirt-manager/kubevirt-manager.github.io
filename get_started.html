@@ -159,7 +159,7 @@
               namespace: kubevirt-manager
               labels:
                 app: kubevirt-manager
-                kubevirt-manager.io/version: 1.2.3
+                kubevirt-manager.io/version: 1.3.0
                 kubevirt-manager.io/managed: "true"
             data:
               prometheus.conf: |
@@ -201,7 +201,7 @@
               namespace: kubevirt-manager
               labels:
                 app: kubevirt-manager
-                kubevirt-manager.io/version: 1.2.3
+                kubevirt-manager.io/version: 1.3.0
                 kubevirt-manager.io/managed: "true"
             data:
               basicauth.conf: |
@@ -220,11 +220,45 @@
               namespace: kubevirt-manager
               labels:
                 app: kubevirt-manager
-                kubevirt-manager.io/version: 1.2.3
+                kubevirt-manager.io/version: 1.3.0
                 kubevirt-manager.io/managed: "true"
             data:
               .htpasswd: YWRtaW46JGFwcjEkMk53ckdFZVkkZmtPZkZldVR4Rm5pZzBsc2NaV3c1MQo=
                 </code></pre>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">&nbsp;</div>
+        <div class="row">
+          <div class="column-content">
+            <h1 id="hero-text">Cluster API</h1>
+          </div>
+          <div class="column-content">&nbsp;</div>
+          <div class="column-content">&nbsp;</div>
+        </div>
+        <div class="row">
+          <div class="column-community-noshadow">&nbsp;</div>
+          <div class="column-community-header">
+            <div class="community-content">
+              kubevirt-manager supports usage of Kubevirt Cluster API provider to provision tenant Kubernetes clusters 
+              inside your Kubevirt cluster. To enable this integration you must install Cluster API following the documentation. 
+              The documentation is available <A HREF="https://cluster-api.sigs.k8s.io/introduction.html" alt="Cluster Api"> here</A>.<br>
+              <A HREF="https://cluster-api.sigs.k8s.io/tasks/experimental-features/cluster-resource-set.html">ClusterResourceSet</A> feature 
+              must be enabled in order for the integration to work, as <A HREF="https://kubevirt-manager.io/">kubevirt-manager</A> uses this feature 
+              to automatically provision CNI and Features inside <b>Standard</b> clusters. To enable it you must export the following env var before 
+              running clusterctl generate:
+              <pre><code>
+            export EXP_CLUSTER_RESOURCE_SET=true  
+              </code></pre>
+              If you already have the Controller running, you can enable it by editing your deployment and adding the following gate to the command line arguments configuration:
+              <pre><code>
+            ClusterResourceSet=true
+              </code></pre>
+              To edit your running Controller use:
+              <pre><code>
+            $ kubectl edit -n capi-system deployment.apps/capi-controller-manager
+              </code></pre>
             </div>
           </div>
         </div>
