@@ -53,6 +53,7 @@
         <nav class="nav">
           <ul class="nav__wrapper">
             <li class="nav__item"><a href="https://kubevirt-manager.io/" alt="#">Home</a></li>
+            <li class="nav__item"><a href="https://kubevirt-manager.io/features.html" alt="#">Features</a></li>
             <li class="nav__item"><a href="https://kubevirt-manager.io/community.html" alt="#">Community</a></li>
             <li class="nav__item"><a href="https://kubevirt-manager.io/get_started.html" alt="#">Get Started</a></li>
           </ul>
@@ -109,131 +110,6 @@
       </div>
       <div class="row">&nbsp;</div>
       <div class="row">&nbsp;</div>
-      <div class="row">&nbsp;</div>
-      <div class="row">
-        <div class="column-full">
-          <center><h1 id="question-text">Features</h1></center>
-        </div>
-      </div>
-      <div class="row">&nbsp;</div>
-      <div class="row">&nbsp;</div>
-      <div class="row">
-        <div class="column-feature-noshadow">&nbsp;</div>
-        <div class="column-feature">
-          <div class="feature-content">
-            <strong>LIFECYCLE</strong><br>
-            Manage <strong>Virtual Machines</strong> lifecycle. Support for operations like start/stop/reboot,
-            as well as pause/resume and scaling, directly from the Web Interface.
-          </div>
-        </div>
-        <div class="column-feature-spacer">&nbsp;</div>
-        <div class="column-feature">
-          <div class="feature-content">
-            <strong>VIRTUAL MACHINE POOLS</strong><br>
-            Create and manage <strong>Virtual Machine Pools</strong> by specifying a template for the
-            <strong>Virtual Machines</strong> as well as the number of replicas and labels.
-          </div>
-        </div>
-        <div class="column-feature-noshadow">&nbsp;</div>
-      </div>
-      <div class="row">
-        <div class="column-feature-noshadow">&nbsp;</div>
-        <div class="column-feature">
-          <div class="feature-content">
-            <strong>INSTANCE TYPES AND PRIORITY CLASS</strong><br>
-            Create and manage <strong>instance types</strong> selecting appropriate values for CPU and Memory.
-            Select between <strong>standard</strong> and <strong>preemptible</strong> classes when creating your
-            <strong>Virtual Machines</strong> and <strong>Virtual Machine Pools</strong>.<br>
-          </div>
-        </div>
-        <div class="column-feature-spacer">&nbsp;</div>
-        <div class="column-feature">
-          <div class="feature-content">
-            <strong>CONSOLE ACCESS</strong><br>
-            Access to all the <strong>Virtual Machines</strong> on the environment directly from Web Interface using
-            embedded <strong>NoVNC</strong> solution.
-            No fancy commands, tunnels or port-forwardings.
-          </div>
-        </div>
-        <div class="column-feature-noshadow">&nbsp;</div>
-      </div>
-      <div class="row">
-        <div class="column-feature-noshadow">&nbsp;</div>
-        <div class="column-feature">
-          <div class="feature-content">
-            <strong>NETWORKING AND VOLUMES</strong><br>
-            Select the appropriate network for your <strong>Virtual Machine</strong> by using <strong>Multus</strong> as a backend.
-            Create, manage and provision <strong>Data Volumes</strong> directly from the Web Interface.
-          </div>
-        </div>
-        <div class="column-feature-spacer">&nbsp;</div>
-        <div class="column-feature">
-          <div class="feature-content">
-            <strong>LOAD BALANCER</strong><br>
-            Create and operate <strong>Services</strong> to Load Balance traffic to your <strong>Virtual Machine Pools</strong>. 
-            Hability to select between <strong>ClusterIP</strong>, <strong>LoadBalancer</strong> and <strong>NodePort</strong> service types.
-          </div>
-        </div>
-        <div class="column-feature-noshadow">&nbsp;</div>
-      </div>
-      <div class="row">
-        <div class="column-feature-noshadow">&nbsp;</div>
-        <div class="column-feature">
-          <div class="feature-content">
-            <strong>CLOUDINIT</strong><br>
-            Support for Cloud Init parameters configuration when defining <strong>Virtual Machines</strong> and <strong>Virtual Machine Pools</strong>.
-            Define user data, as well as network data (IP Address, Netmask, Gateway and DNS).
-          </div>
-        </div>
-        <div class="column-feature-spacer">&nbsp;</div>
-        <div class="column-feature">
-            <div class="feature-content">
-              <strong>MONITORING</strong><br>
-              Monitor your <strong>Virtual Machines</strong>, <strong>Pools</strong> and <strong>Nodes</strong> directly in the dashboard through usage graphs. 
-              Integration with <strong>Prometheus</strong> is provided for <strong>CPU</strong>, <strong>Memory</strong>, <strong>Disk</strong> and <strong>Newtorking</strong> metrics.
-            </div>
-        </div>
-        <div class="column-feature-noshadow">&nbsp;</div>
-      </div>
-      <div class="row">
-        <div class="column-feature-noshadow">&nbsp;</div>
-        <div class="column-feature">
-          <div class="feature-content">
-            <strong>AUTOSCALING</strong><br>
-            Support for Horizontal Pod Autoscaling on Kubevirt <strong>0.59.0</strong> for <strong>Virtual Machine Pools</strong>.
-            Determine your pool autoscaling strategy based on CPU Utilization metrics.
-          </div>
-        </div>
-        <div class="column-feature-spacer">&nbsp;</div>
-        <div class="column-feature">
-            <div class="feature-content">
-              <strong>HEALTH CHECKING</strong><br>
-              Add <strong>Liveness</strong> and <strong>Readines</strong> probes to your Virtual Machine Pools. 
-              Establish how your Pool behaves and heals based on <strong>HTTP</strong> and <strong>TCP</strong> probes.
-            </div>
-        </div>
-        <div class="column-feature-noshadow">&nbsp;</div>
-      </div>
-      <div class="row">
-        <div class="column-feature-noshadow">&nbsp;</div>
-        <div class="column-feature">
-          <div class="feature-content">
-            <strong>CLUSTER API</strong><br>
-            Support for <strong>Kubevirt Cluster API Provider</strong> to execute Kubernetes clusters within you Kubevirt environment.
-            Select between <strong>Standard</strong> and <strong>Custom</strong> clusters.
-          </div>
-        </div>
-        <div class="column-feature-spacer">&nbsp;</div>
-        <div class="column-feature">
-            <div class="feature-content">
-              <strong>CLOUD PROVIDER</strong><br>
-              Integration with <strong>Kubevirt API Cloud Provider</strong> enables the automatic creation and configuration 
-              of Load Balancers and traffic exposure from your 
-              <strong>Cluster API</strong> tenant clusters to the world.
-            </div>
-        </div>
-        <div class="column-feature-noshadow">&nbsp;</div>
-      </div>
       <div class="row">&nbsp;</div>
 
       <div class="row">&nbsp;</div>
