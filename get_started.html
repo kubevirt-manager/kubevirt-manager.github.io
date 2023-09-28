@@ -53,6 +53,7 @@
         <nav class="nav">
           <ul class="nav__wrapper">
             <li class="nav__item"><a href="https://kubevirt-manager.io/" alt="#">Home</a></li>
+            <li class="nav__item"><a href="https://kubevirt-manager.io/features.html" alt="#">Features</a></li>
             <li class="nav__item"><a href="https://kubevirt-manager.io/community.html" alt="#">Community</a></li>
             <li class="nav__item"><a href="https://kubevirt-manager.io/get_started.html" alt="#">Get Started</a></li>
           </ul>
@@ -85,10 +86,13 @@
           <div class="column-community-header">
             <div class="community-content">
               kubevirt-manager controls and manages disks, so a StorageClass is needed in order for the solution to work.
-              Two features needs to be enabled on the StorageClass that you plan to use:
+              <b>allowVolumeExpansion</b> feature needs to be enabled on the StorageClass that you plan to use:
+              <pre><code>
+    allowVolumeExpansion: true
+              </code></pre>
+              If you are using hostpath-provisioner or some local storage you may also need:
               <pre><code>
     volumeBindingMode: WaitForFirstConsumer
-    allowVolumeExpansion: true
               </code></pre>
             </div>
           </div>

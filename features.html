@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>kubevirt-manager.io: features</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta name="title" content="kubevirt-manager"/>
+    <meta name="description" content="A Web User Interface and Dashboard for Kubevirt, that helps creation, administration and management of Virtual Machines and Pools on top of Kubevirt."/>
+    <meta name="keywords" content="kubernetes,kubevirt,virtualmachines,vms,kvm,dashboard"/>
+    <meta property="og:title" content="kubevirt-manager"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:description" content="A Web User Interface and Dashboard for Kubevirt, that helps the creation, administration and management of Virtual Machines and Pools on top of Kubevirt."/>
+    <meta property="og:url" content="https://kubevirt-manager.io/"/>
+    <meta property="og:image" content="https://kubevirt-manager.io/img/kubevirt-manager-logo.png"/>
+    <meta property="og:image:alt" content="kubevirt-manager Logo"/>
+    <meta property="og:image:width" content="500"/>
+    <meta property="og:image:height" content="500"/>
+    <meta property="og:site_name" content="kubevirt-manager"/>
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@KubevirtMGR"/>
+    <meta name=”twitter:card” content=”summary“/>
+    <meta name=”twitter:url” content=”https://kubevirt-manager.io/”/>
+    <meta name="twitter:description" content="A Web User Interface for and Dashboard Kubevirt, that helps the creation, administration and management of Virtual Machines and Pools on top of Kubevirt."/>
+
+    <!-- Cannonical URL -->
+    <link rel="canonical" href="https://kubevirt-manager.io/community.html" />
+    <!-- Favorite Icon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <!-- Bootstrap core CSS -->
+    <link href="/style/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="/style/style.css" rel="stylesheet">
+
+    <!-- Google SEO Metadata -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "kubevirt-manager.io",
+            "url": "https://kubevirt-manager.io/",
+            "logo": "https://kubevirt-manager.io/img/kubevirt-manager-logo.png"
+        }
+    </script> 
+  </head>
+
+  <body>
+
+    <!-- Header Start -->
+    <header class="site-header">
+      <div class="wrapper site-header__wrapper">
+        <A HREF="https://kubevirt-manager.io/" alt="#"><img src="/img/logo-website.png" height="100" class="brand" alt="kubevirt-manager logo"></A>
+        <nav class="nav">
+          <ul class="nav__wrapper">
+            <li class="nav__item"><a href="https://kubevirt-manager.io/" alt="#">Home</a></li>
+            <li class="nav__item"><a href="https://kubevirt-manager.io/features.html" alt="#">Features</a></li>
+            <li class="nav__item"><a href="https://kubevirt-manager.io/community.html" alt="#">Community</a></li>
+            <li class="nav__item"><a href="https://kubevirt-manager.io/get_started.html" alt="#">Get Started</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Body Start -->
+    <div class="container">
+        <div class="row">&nbsp;</div>
+        <div class="row">&nbsp;</div>
+        <div class="row">
+            <div class="column-feature-noshadow">&nbsp;</div>
+            <div class="column-feature">
+              <div class="feature-content">
+                <strong>LIFECYCLE</strong><br>
+                Manage <strong>Virtual Machines</strong> lifecycle. Support for operations like start/stop/reboot,
+                as well as pause/resume and scaling, directly from the Web Interface.
+              </div>
+            </div>
+            <div class="column-feature-spacer">&nbsp;</div>
+            <div class="column-feature">
+              <div class="feature-content">
+                <strong>VIRTUAL MACHINE POOLS</strong><br>
+                Create and manage <strong>Virtual Machine Pools</strong> by specifying a template for the
+                <strong>Virtual Machines</strong> as well as the number of replicas and labels.
+              </div>
+            </div>
+            <div class="column-feature-noshadow">&nbsp;</div>
+          </div>
+          <div class="row">
+            <div class="column-feature-noshadow">&nbsp;</div>
+            <div class="column-feature">
+              <div class="feature-content">
+                <strong>INSTANCE TYPES AND PRIORITY CLASS</strong><br>
+                Create and manage <strong>instance types</strong> selecting appropriate values for CPU and Memory.
+                Select between <strong>standard</strong> and <strong>preemptible</strong> classes when creating your
+                <strong>Virtual Machines</strong> and <strong>Virtual Machine Pools</strong>.<br>
+              </div>
+            </div>
+            <div class="column-feature-spacer">&nbsp;</div>
+            <div class="column-feature">
+              <div class="feature-content">
+                <strong>CONSOLE ACCESS</strong><br>
+                Access to all the <strong>Virtual Machines</strong> on the environment directly from Web Interface using
+                embedded <strong>NoVNC</strong> solution.
+                No fancy commands, tunnels or port-forwardings.
+              </div>
+            </div>
+            <div class="column-feature-noshadow">&nbsp;</div>
+          </div>
+          <div class="row">
+            <div class="column-feature-noshadow">&nbsp;</div>
+            <div class="column-feature">
+              <div class="feature-content">
+                <strong>NETWORKING AND VOLUMES</strong><br>
+                Select the appropriate network for your <strong>Virtual Machine</strong> by using <strong>Multus</strong> as a backend.
+                Create, manage and provision <strong>Data Volumes</strong> directly from the Web Interface.
+              </div>
+            </div>
+            <div class="column-feature-spacer">&nbsp;</div>
+            <div class="column-feature">
+              <div class="feature-content">
+                <strong>LOAD BALANCER</strong><br>
+                Create and operate <strong>Services</strong> to Load Balance traffic to your <strong>Virtual Machine Pools</strong>. 
+                Hability to select between <strong>ClusterIP</strong>, <strong>LoadBalancer</strong> and <strong>NodePort</strong> service types.
+              </div>
+            </div>
+            <div class="column-feature-noshadow">&nbsp;</div>
+          </div>
+          <div class="row">
+            <div class="column-feature-noshadow">&nbsp;</div>
+            <div class="column-feature">
+              <div class="feature-content">
+                <strong>CLOUDINIT</strong><br>
+                Support for Cloud Init parameters configuration when defining <strong>Virtual Machines</strong> and <strong>Virtual Machine Pools</strong>.
+                Define user data, as well as network data (IP Address, Netmask, Gateway and DNS).
+              </div>
+            </div>
+            <div class="column-feature-spacer">&nbsp;</div>
+            <div class="column-feature">
+                <div class="feature-content">
+                  <strong>MONITORING</strong><br>
+                  Monitor your <strong>Virtual Machines</strong>, <strong>Pools</strong> and <strong>Nodes</strong> directly in the dashboard through usage graphs. 
+                  Integration with <strong>Prometheus</strong> is provided for <strong>CPU</strong>, <strong>Memory</strong>, <strong>Disk</strong> and <strong>Newtorking</strong> metrics.
+                </div>
+            </div>
+            <div class="column-feature-noshadow">&nbsp;</div>
+          </div>
+          <div class="row">
+            <div class="column-feature-noshadow">&nbsp;</div>
+            <div class="column-feature">
+              <div class="feature-content">
+                <strong>AUTOSCALING</strong><br>
+                Support for Horizontal Pod Autoscaling on Kubevirt <strong>0.59.0</strong> for <strong>Virtual Machine Pools</strong>.
+                Determine your pool autoscaling strategy based on CPU Utilization metrics.
+              </div>
+            </div>
+            <div class="column-feature-spacer">&nbsp;</div>
+            <div class="column-feature">
+                <div class="feature-content">
+                  <strong>HEALTH CHECKING</strong><br>
+                  Add <strong>Liveness</strong> and <strong>Readines</strong> probes to your Virtual Machine Pools. 
+                  Establish how your Pool behaves and heals based on <strong>HTTP</strong> and <strong>TCP</strong> probes.
+                </div>
+            </div>
+            <div class="column-feature-noshadow">&nbsp;</div>
+          </div>
+          <div class="row">
+            <div class="column-feature-noshadow">&nbsp;</div>
+            <div class="column-feature">
+              <div class="feature-content">
+                <strong>CLUSTER API</strong><br>
+                Support for <strong>Kubevirt Cluster API Provider</strong> to execute Kubernetes clusters within you Kubevirt environment.
+                Select between <strong>Standard</strong> and <strong>Custom</strong> clusters.
+              </div>
+            </div>
+            <div class="column-feature-spacer">&nbsp;</div>
+            <div class="column-feature">
+                <div class="feature-content">
+                  <strong>CLOUD PROVIDER</strong><br>
+                  Integration with <strong>Kubevirt API Cloud Provider</strong> enables the automatic creation and configuration 
+                  of Load Balancers and traffic exposure from your 
+                  <strong>Cluster API</strong> tenant clusters to the world.
+                </div>
+            </div>
+            <div class="column-feature-noshadow">&nbsp;</div>
+          </div>
+          <div class="row">&nbsp;</div>
+        </div>
+      </div>
+      <!-- Body End -->
+
+    <!-- Footer Start -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="column-footer">
+            <div class="row-footer">&nbsp;</div>
+            <div class="row-footer"><span style="font-weight:bold;">kubevirt-manager</span></div>
+            <div class="row-footer">Licensed under <A HREF="https://www.apache.org/licenses/LICENSE-2.0.html" style="color:white;font-weight:bold;">Apache License 2.0.</A></div>
+            <div class="row-footer">Copyright © 2022-2023 <span style="font-weight:bold;">KubeVirt Manager</span>.</div>
+            <div class="row-footer">All rights reserved.</div>
+          </div>
+          <div class="column-footer-icons">
+            <center>
+            <div class="row-footer">&nbsp;</div>
+            <div class="column-footer-content">
+              <center><a href="https://github.com/kubevirt-manager"><img src="/img/github.svg" width="60" alt="Github: kubevirt-manager"></a></center>
+            </div>
+            <div class="column-footer-content">
+              <center><a href="https://twitter.com/KubevirtMGR"><img src="/img/twitter.svg" width="60" alt="Twitter: @KubevirtMGR"></a></center>
+            </div>
+            <div class="column-footer-content">
+              <center><a href="https://www.youtube.com/@KubevirtMGR"><img src="/img/youtube.svg" width="60" alt="Youtube: @KubevirtMGR"></a></center>
+            </div>
+            </center>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+  </body>
+</html>
