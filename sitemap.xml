@@ -3,7 +3,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
    <url>
       <loc>https://kubevirt-manager.io/</loc>
-      <lastmod>2024-03-12</lastmod>
+      <lastmod>2024-07-04</lastmod>
       <changefreq>monthly</changefreq>
       <priority>1.0</priority>
       <image:image>
@@ -42,22 +42,46 @@
       <image:image>
         <image:loc>https://kubevirt-manager.io/img/screenshots/screenshot_08.png</image:loc>
       </image:image>
+      <image:image>
+        <image:loc>https://kubevirt-manager.io/img/screenshots/screenshot_09.png</image:loc>
+      </image:image>
+      <image:image>
+        <image:loc>https://kubevirt-manager.io/img/screenshots/screenshot_10.png</image:loc>
+      </image:image>
+      <image:image>
+        <image:loc>https://kubevirt-manager.io/img/screenshots/screenshot_11.png</image:loc>
+      </image:image>
+      <image:image>
+        <image:loc>https://kubevirt-manager.io/img/screenshots/screenshot_12.png</image:loc>
+      </image:image>
+      <image:image>
+        <image:loc>https://kubevirt-manager.io/img/screenshots/screenshot_13.png</image:loc>
+      </image:image>
+      <image:image>
+        <image:loc>https://kubevirt-manager.io/img/screenshots/screenshot_14.png</image:loc>
+      </image:image>
+      <image:image>
+        <image:loc>https://kubevirt-manager.io/img/screenshots/screenshot_15.png</image:loc>
+      </image:image>
+      <image:image>
+        <image:loc>https://kubevirt-manager.io/img/screenshots/screenshot_16.png</image:loc>
+      </image:image>
    </url>
    <url>
       <loc>https://kubevirt-manager.io/features.html</loc>
-      <lastmod>2024-03-12</lastmod>
+      <lastmod>2024-07-04</lastmod>
       <changefreq>monthly</changefreq>
       <priority>1.0</priority>
    </url>
    <url>
       <loc>https://kubevirt-manager.io/community.html</loc>
-      <lastmod>2024-02-14</lastmod>
+      <lastmod>2024-07-04</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>https://kubevirt-manager.io/get_started.html</loc>
-      <lastmod>2024-03-12</lastmod>
+      <lastmod>2024-07-04</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.8</priority>
    </url>
