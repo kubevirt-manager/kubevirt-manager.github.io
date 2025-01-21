@@ -3,7 +3,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
    <url>
       <loc>https://kubevirt-manager.io/</loc>
-      <lastmod>2024-07-04</lastmod>
+      <lastmod>2025-01-20</lastmod>
       <changefreq>monthly</changefreq>
       <priority>1.0</priority>
       <image:image>
@@ -69,19 +69,19 @@
    </url>
    <url>
       <loc>https://kubevirt-manager.io/features.html</loc>
-      <lastmod>2024-07-04</lastmod>
+      <lastmod>2025-01-20</lastmod>
       <changefreq>monthly</changefreq>
       <priority>1.0</priority>
    </url>
    <url>
       <loc>https://kubevirt-manager.io/community.html</loc>
-      <lastmod>2024-07-04</lastmod>
+      <lastmod>2025-01-20</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>https://kubevirt-manager.io/get_started.html</loc>
-      <lastmod>2024-07-04</lastmod>
+      <lastmod>2025-01-20</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.8</priority>
    </url>
